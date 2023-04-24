@@ -1,0 +1,26 @@
+.con{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 70%;
+    width: 60%;
+
+    .checkbox{
+        display: flex;
+        div{
+            margin-right: 10px;
+        }
+    }
+}
+
+button{
+    background-color: #5a6b85;
+    border: 0.5px solid #48684e;
+    border-radius: 10px;
+    color: white;
+    width: 40%;
+    &:active{
+        scale:0.9;
+    }
+}
