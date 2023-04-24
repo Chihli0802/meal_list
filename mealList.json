@@ -1,0 +1,67 @@
+[
+    {
+        "name": "蒙上你的眼",
+        "category": ["Horror", "Sci-Fi"],
+        "filter": false
+    },
+    {
+        "name": "噤界",
+        "category": ["Horror", "Sci-Fi"],
+        "filter": false
+    },
+    {
+        "name": "全面啟動",
+        "category": ["Action", "Sci-Fi"],
+        "filter": false
+    },
+    {
+        "name": "勇闖禁區",
+        "category": ["Drama", "Sport"],
+        "filter": false
+    },
+    {
+        "name": "攻其不備",
+        "category": ["Drama", "Sport"],
+        "filter": false
+    },
+    {
+        "name": "記得我",
+        "category": ["Drama", "Romance"],
+        "filter": false
+    },
+    {
+        "name": "美麗境界",
+        "category": ["Drama", "Romance"],
+        "filter": false
+    },
+    {
+        "name": "已經很想妳",
+        "category": ["Drama", "Romance"],
+        "filter": false
+    },
+    {
+        "name": "我願意",
+        "category": ["Adventure", "Romance"],
+        "filter": false
+    },
+    {
+        "name": "關鍵少數",
+        "category": ["Drama", "Historical film"],
+        "filter": false
+    },
+    {
+        "name": "球神梅西",
+        "category": ["Drama", "Biographical film"],
+        "filter": false
+    },
+    {
+        "name": "水果硬糖",
+        "category": ["Drama", "Thriller"],
+        "filter": false
+    },
+    {
+        "name": "顫慄柏林",
+        "category": ["Horror", "Thriller"],
+        "filter": false
+    }
+]

@@ -1,70 +1,3 @@
-const mealList = [
-    {
-        "name": "蒙上你的眼",
-        "category": ["Horror", "Sci-Fi"],
-        "filter": false
-    },
-    {
-        "name": "噤界",
-        "category": ["Horror", "Sci-Fi"],
-        "filter": false
-    },
-    {
-        "name": "全面啟動",
-        "category": ["Action", "Sci-Fi"],
-        "filter": false
-    },
-    {
-        "name": "勇闖禁區",
-        "category": ["Drama", "Sport"],
-        "filter": false
-    },
-    {
-        "name": "攻其不備",
-        "category": ["Drama", "Sport"],
-        "filter": false
-    },
-    {
-        "name": "記得我",
-        "category": ["Drama", "Romance"],
-        "filter": false
-    },
-    {
-        "name": "美麗境界",
-        "category": ["Drama", "Romance"],
-        "filter": false
-    },
-    {
-        "name": "已經很想妳",
-        "category": ["Drama", "Romance"],
-        "filter": false
-    },
-    {
-        "name": "我願意",
-        "category": ["Adventure", "Romance"],
-        "filter": false
-    },
-    {
-        "name": "關鍵少數",
-        "category": ["Drama", "Historical film"],
-        "filter": false
-    },
-    {
-        "name": "球神梅西",
-        "category": ["Drama", "Biographical film"],
-        "filter": false
-    },
-    {
-        "name": "水果硬糖",
-        "category": ["Drama", "Thriller"],
-        "filter": false
-    },
-    {
-        "name": "顫慄柏林",
-        "category": ["Horror", "Thriller"],
-        "filter": false
-    }
-]
 
 const btn = document.querySelector("#btn");
 const answer = document.querySelector("#answer");
@@ -74,10 +7,30 @@ const spo = document.querySelector("#spo");
 const rom = document.querySelector("#rom");
 const dra = document.querySelector("#dra");
 
+//===========================================
+let mealList = [] //要創空間
+fetch("mealList.json")
+    .then(function(response){
+    //從json轉回JS物件
+    return response.json()
+})
+    .then(function(data){
+        // 成功抓取資料
+        //將抓到的資料存進空間
+        mealList = data;
+    
+})
+    .catch(function(error){
+    //沒有抓成功的話 就會進catch
+    console.log(error)
+})
+//===========================================
+
+
+
+
 
 btn.addEventListener("click", function () {
-
-
     //將有打勾的category丟進arr
     const arr = []
     if (sci.checked) {
